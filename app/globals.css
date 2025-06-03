@@ -1,0 +1,272 @@
+/*this program is written for the benefit of the society*/
+/* Always attribute this text as part of the license */
+/* released under MIT opensource license*/
+/* developed by: @Victor Mark */
+/* You can add your name here if you improve code functionality*/
+/*https://github.com/Tylique*/
+
+/* app/globals.css */
+/* Updated globals.css */
+:root {
+  /* Font & Layout */
+  --font-scale: 0.95;
+
+  /* Colors - Light Mode */
+  --primary: #198754;
+  --primary-hover: #157347;
+  --bg-light: #f8f9fa;
+  --card-light: #ffffff;
+  --border-light: #dee2e6;
+  --text-light: #333333;
+
+  /* Colors - Dark Mode */
+  --bg-dark: #121212;
+  --card-dark: #1e1e1e;
+  --border-dark: #2e2e2e;
+  --text-dark: #f0f0f0;
+
+  /* Component Specific */
+  --section-label-light: #1890ff;
+  --section-label-dark: #58a6ff;
+  --impact-label-light: #ff4d4f;
+  --impact-label-dark: #ff6b6b;
+  --clause-number-light: #52c41a;
+  --clause-number-dark: #73d13d;
+  --shadow-light: rgba(100, 255, 100, 0.15);
+  --shadow-dark: rgba(80, 200, 80, 0.25);
+}
+
+/* Theme Classes */
+/* Force text contrast in both modes */
+.light {
+  --text-strong: #111;
+  --text-normal: #333;
+  --text-muted: #198754;
+  --bg-contrast: white;
+}
+
+.dark {
+  --text-strong: #fff;
+  --text-normal: #eee;
+  --text-muted: #198754;
+  --bg-contrast: #1e1e1e;
+}
+
+/* Base Styles */
+body {
+  font-size: calc(1rem * var(--font-scale));
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+.dark .text-colored {
+  color: var(--text-color) !important;
+}
+/* Force text color for specific elements */
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark h5,
+.dark h6,
+.dark p,
+.dark span,
+.dark li {
+  color: #20b2aa;
+}
+
+
+/* Dark mode styles */
+.dark {
+  --text-color: #f0f0f0;
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --border-color: #2e2e2e;
+    color: #f8f9fa;
+}
+.dark body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.theme-transition * {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+/* Typography */
+h1 {
+  font-size: calc(1.75rem * var(--font-scale));
+}
+
+h2 {
+  font-size: calc(1.5rem * var(--font-scale));
+}
+
+h3 {
+  font-size: calc(1.25rem * var(--font-scale));
+}
+
+/* Components */
+.card {
+  background-color: var(--card-light);
+  border-color: var(--border-light);
+}
+
+.dark .card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+.form-control, .form-select, .btn {
+  font-size: calc(1rem * var(--font-scale));
+}
+
+.dark .form-control,
+.dark .form-select {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+.dark .form-control:focus,
+.dark .form-select:focus {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+
+/* Email preview */
+.EmailPreview {
+  font-size: calc(0.9rem * var(--font-scale));
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Swiper styles */
+.swiper {
+  padding: 10px 10px 30px;
+}
+
+.swiper-slide {
+  height: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--primary) !important;
+  background: rgba(255, 255, 255, 0.8);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dark .swiper-button-next,
+.dark .swiper-button-prev {
+  background: rgba(30, 30, 30, 0.8);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.2rem !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--primary) !important;
+}
+
+/* Topic cards */
+.card.cursor-pointer {
+  transition: all 0.2s ease;
+  border: 1px solid var(--border-light);
+}
+
+.dark .card.cursor-pointer {
+  border-color: var(--border-color);
+}
+
+.card.cursor-pointer:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card.cursor-pointer.border-success {
+  border: 2px solid var(--primary);
+}
+
+/* Header and footer */
+.dark header,
+.dark footer {
+  background-color: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  :root {
+    --font-scale: 0.9;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+}
+/* Ensure button text is visible in dark mode */
+.dark .btn-outline-secondary {
+  color: white !important;
+  border-color: white !important;
+}
+
+.dark .btn-outline-secondary:hover {
+  background: #333 !important;
+}
+/* Add this at the bottom of globals.css */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.dark {
+  /* Override ALL text colors to be readable */
+  color: var(--text-color);
+}
+
+.dark .text-default {
+  color: var(--text-color);
+}
+.dark .text-muted {
+  color: #cfcfcf !important; /* Lighter muted text for readability */
+}
+.dark .bg-light,
+.dark .bg-white {
+  background-color: #1e1e1e !important;
+}
+
+.dark .border {
+  border-color: #2e2e2e !important;
+}
+/* Make sure placeholder text is visible in dark mode */
+.dark ::placeholder {
+  color: #cfcfcf !important; /* Light muted tone for readability */
+}
+
+.themeToggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media (max-width: 768px) {
+  .themeToggle {
+    position: static;
+    margin-top: 10px;
+  }
+}

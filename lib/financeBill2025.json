@@ -1,0 +1,166 @@
+{
+  "year": 2025,
+  "items": [
+    {
+      "id": "12D",
+      "title": "1% Minimum Tax on Gross Turnover",
+      "description": "A flat 1% tax on all revenue (gross turnover) of businesses, regardless of whether they make a profit or a loss.",
+      "impacts": [
+        "Hits businesses even if unprofitable, as it's not based on actual profit.",
+        "Small businesses, informal traders, mama mbogas, boda bodas, and many microenterprises that already operate on thin margins will suffer.",
+        "Businesses will try to recover this 'forced tax' by raising prices – making goods and services more expensive for Kenyans.",
+        "Could kill small businesses unable to survive the extra tax burden."
+      ]
+    },
+    {
+      "id": "12C",
+      "title": "1.5% Turnover Tax on Small Businesses",
+      "description": "A tax of 1.5% on the gross revenue for businesses with turnover up to KSh 25 million/year.",
+      "impacts": [
+        "No deductions allowed for costs – even if a trader has high costs (like rent, stock, salaries), they still pay the tax.",
+        "Traders in markets, small retailers, and service providers will pass this on to consumers, raising food and essential goods prices.",
+        "Adds complexity and compliance stress for small businesses, many of which are not tax-savvy."
+      ]
+    },
+    {
+      "id": "17A",
+      "title": "2% Presumptive Agricultural Tax",
+      "description": "A flat 2% tax on all income earned from selling farm produce.",
+      "impacts": [
+        "Farmers pay regardless of input costs or failed harvests.",
+        "Encourages higher food prices at the market.",
+        "Unfair to smallholder farmers, who feed the nation."
+      ]
+    },
+    {
+      "id": "12E",
+      "title": "Advance Tax on Vehicles",
+      "description": "KES 2,500 per tonne/year (trucks/pickups) or KES 100/passenger/month (matatus/buses).",
+      "impacts": [
+        "Raises cost of transport for goods and people.",
+        "Hits food supply chains, inflating food costs in cities.",
+        "Increases matatu fares and delivery fees."
+      ]
+    },
+    {
+      "id": "Excise-Digital",
+      "title": "Excise Duty on Digital Services",
+      "description": "Excise tax on non-resident digital service providers (e.g. online learning platforms, cloud software, streaming).",
+      "impacts": [
+        "Makes e-learning, online work, and digital business more expensive.",
+        "Shrinks access to digital tools among youth and small startups.",
+        "Families and students struggle to afford virtual learning."
+      ]
+    },
+    {
+      "id": "33D",
+      "title": "Digital Asset Tax (3%)",
+      "description": "A 3% tax on transfer/exchange of digital assets such as cryptocurrency and NFTs.",
+      "impacts": [
+        "Penalizes young, tech-savvy innovators.",
+        "Could kill Kenya’s emerging Web3 and crypto adoption scene.",
+        "Limits future-proof financial inclusion efforts."
+      ]
+    },
+    {
+      "id": "RentalIncome",
+      "title": "Residential Rental Income Tax (7.5%)",
+      "description": "A tax on income landlords earn from residential properties.",
+      "impacts": [
+        "Landlords will pass this tax to tenants, raising rent.",
+        "Worsens urban housing strain, especially in low-cost areas.",
+        "Increases cost of living for the working class and students."
+      ]
+    },
+    {
+      "id": "Leasing",
+      "title": "Vehicle & Machinery Leasing Restrictions",
+      "description": "Limits on deductible leasing costs for business or agricultural machinery.",
+      "impacts": [
+        "Increases cost of farm and transport equipment.",
+        "Discourages mechanization and efficient logistics.",
+        "Leads to higher prices in agriculture and transport sectors."
+      ]
+    },
+    {
+      "id": "SEPT",
+      "title": "Significant Economic Presence Tax (30% Deemed Profit)",
+      "description": "Applies to foreign digital companies offering services in Kenya.",
+      "impacts": [
+        "Global platforms may pass tax costs to Kenyan users.",
+        "Reduces affordability of digital services for youth and businesses.",
+        "Makes Kenya less attractive for international tech firms."
+      ]
+    },
+    {
+      "id": "CGT",
+      "title": "Increased Capital Gains Tax (15%)",
+      "description": "Tax on profit from selling land, homes, or shares.",
+      "impacts": [
+        "Families selling small plots for school fees or emergencies are taxed more.",
+        "Could reduce land accessibility and discourage small-scale investment.",
+        "Adds cost to succession and property inheritance."
+      ]
+    },
+    {
+      "id": "TaxRecovery-Property",
+      "title": "Property Seizure for Unpaid Taxes",
+      "description": "KRA may register unpaid taxes against your property and auction it after 2 months.",
+      "impacts": [
+        "Enables state-backed land grabbing under legal cover.",
+        "No minimum debt value — even small arrears may result in loss of property.",
+        "Endangers family land, especially among the elderly and vulnerable."
+      ]
+    },
+    {
+      "id": "72C",
+      "title": "20% Penalty for Underpaid Installment Tax",
+      "description": "A 20% penalty for failure to accurately estimate and pay installment taxes.",
+      "impacts": [
+        "Punishes farmers and small traders with irregular income.",
+        "Adds risk to filing and discourages compliance.",
+        "Could lead to debt traps for honest taxpayers."
+      ]
+    },
+    {
+      "id": "Compliance-Fines",
+      "title": "Heavy Fines for Compliance Errors (KES 100,000/month)",
+      "description": "Strict penalties for failing to file digital returns or generate e-invoices.",
+      "impacts": [
+        "Cripples small businesses with poor tech access or digital literacy.",
+        "Could bankrupt informal businesses before they scale.",
+        "Discourages business registration and compliance."
+      ]
+    },
+    {
+      "id": "Compensation-Tax",
+      "title": "Tax on Compensation Payments",
+      "description": "Extra tax on specific employee and contractor compensation types.",
+      "impacts": [
+        "Raises cost of hiring and contract payments.",
+        "Encourages informal labor over registered employment.",
+        "Reduces worker protections and stability."
+      ]
+    },
+    {
+      "id": "exclusions/silent omissions1",
+      "title": "Silent VAT on Sanitary Pads, Soap, Diapers, etc.",
+      "description": "The Bill does not explicitly reaffirm exemptions for hygiene essentials.",
+      "impacts": [
+        "Allows future taxation of sanitary pads, diapers, antiseptics, and soap.",
+        "Exacerbates period poverty, child hygiene risks, and household strain.",
+        "Unfairly burdens women, girls, and caregivers."
+      ]
+    },
+    {
+      "id": "exclusions/silent omissions2",
+      "title": "Medical Devices, Drugs & Assistive Devices – Omitted Exemptions",
+      "description": "No mention of VAT exemptions for essential healthcare products or disability aids.",
+      "impacts": [
+        "Leaves the door open for taxing imported drugs and assistive devices.",
+        "Raises hospital and pharmacy costs for consumers.",
+        "Disproportionately impacts persons with disabilities and the chronically ill."
+      ]
+    }
+  ]
+}

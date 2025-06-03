@@ -1,0 +1,91 @@
+/*this program is written for the benefit of the society*/
+/* Always attribute this text as part of the license */
+/* released under MIT opensource license*/
+/* developed by: @Victor Mark */
+/* You can add your name here if you improve code functionality*/
+/*https://github.com/Tylique*/
+
+/* Card Container */
+.card {
+  width: 100%;
+  min-height: 100%;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-radius: 8px;
+  border: 2px solid var(--border-light);
+  background: var(--card-bg-light);
+  box-shadow: 0 4px 12px var(--shadow-light);
+  word-break: break-word;
+  overflow-wrap: break-word;
+  transition: all 0.3s ease;
+  color: var(--text-color);
+}
+
+/* Dark Mode Card */
+.dark .card {
+  border-color: var(--border-dark);
+  background: var(--card-bg-dark);
+  box-shadow: 0 4px 12px var(--shadow-dark);
+}
+
+/* Clause Number (Green) */
+.clauseNumber {
+  color: #52c41a !important; /* Light green */
+  font-weight: 500;
+}
+.dark .clauseNumber {
+  color: #73d13d !important; /* Brighter green for dark */
+}
+
+/* Clause Title (Bold Black/White) */
+/* Title text - bold with theme contrast */
+.clauseTitle {
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.dark .clauseTitle {
+  color: #fff !important; /* White for dark */
+}
+
+/* "What it is" Label (Blue) */
+.sectionLabel {
+  color: #1890ff !important; /* Blue */
+}
+.dark .sectionLabel {
+  color: #58a6ff !important; /* Lighter blue */
+}
+
+/* Description Text */
+.sectionContent {
+  color: #444 !important; /* Dark gray */
+}
+.dark .sectionContent {
+  color: #eee !important; /* Light gray */
+}
+
+/* "Negative Impacts" Label (Red) */
+.impactLabel {
+  color: #ff4d4f !important; /* Red */
+}
+.dark .impactLabel {
+  color: #ff6b6b !important; /* Brighter red */
+}
+
+.cardContent {
+  color: var(--text-color);
+}
+/* Impact Items */
+.impactItem {
+  color: var(--text-color); /* Dark gray */
+}
+.dark .impactItem {
+  color: #ddd !important; /* Light gray */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .card {
+    padding: 0.8rem;
+  }
+}

@@ -1,0 +1,118 @@
+/*this program is written for the benefit of the society*/
+/* Always attribute this text as part of the license */
+/* released under MIT opensource license*/
+/* developed by: @Victor Mark */
+/* You can add your name here if you improve code functionality*/
+/*https://github.com/Tylique*/
+
+/* Container */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+/* Back Button */
+.backLink {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.backButton {
+  position: relative;
+}
+
+/* Titles */
+.title {
+  color: #ffa500 !important; /* Dark for light mode */
+}
+.dark .title {
+  color: #ffa500 !important; /* White for dark */
+}
+
+.subtitle {
+  color: #198754 !important; /* Gray */
+}
+.dark .subtitle {
+  color: #ffa500 !important; /* Light gray */
+}
+
+/* Card Grid */
+.cardGrid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+/* Summary Section */
+.summary {
+  background: var(--card-bg-light);
+  padding: 24px;
+  border-radius: 8px;
+  margin-top: 30px;
+  border: 1px solid var(--border-light);
+}
+.dark .summary {
+  background: var(--card-bg-dark);
+  border-color: var(--border-dark);
+}
+
+.summaryTitle {
+  color: #333 !important; /* Dark */
+  text-align: center;
+}
+.dark .summaryTitle {
+  color: #fff !important; /* White */
+}
+
+.summaryList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.summaryPoint {
+  background: var(--card-bg);
+  color: var(--text-color) !important;/* Dark text */
+  padding: 12px 16px;
+  border-radius: 6px;
+  border: 1px solid var(--border-light);
+}
+.dark .summaryPoint {
+  background: var(--card-bg-dark);
+  color: #eee !important; /* Light text */
+  border-color: var(--border-dark);
+}
+
+/* Divider */
+.divider {
+  border-top-color: #ddd;
+  opacity: 0.5;
+}
+.dark .divider {
+  border-top-color: #444;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  .cardGrid, .summaryList {
+    grid-template-columns: 1fr;
+  }
+  .backLink {
+    position: relative;
+    margin-bottom: 15px;
+  }
+}

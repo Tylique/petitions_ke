@@ -108,6 +108,51 @@ Location: {LOCATION}
 3. Submit PR with test evidence
 
 ## **License**
-MIT © 2024 [Your Name]
+GNU AFFERO © 2025 Victor MArk (Tylique)
 
 ---
+
+🌍 License Terms (Plain English Summary)
+Your Freedom
+✅ Use Freely: Individuals, NGOs, can use this tool at no cost
+✅ Copy & Share: Distribute original or modified versions to others
+✅ Protect Privacy: No requirement to disclose user data
+
+Your Responsibilities
+📜 Share Changes: If you modify the code, you must publicly share your version
+🔍 Disclose Source: Anyone who uses your modified version must get access to the full source code
+🚫 No Commercial Use: Companies/SaaS platforms cannot profit from this software without special permission
+
+🚫 Prohibited Actions
+
+Selling this software as-is or modified
+
+Using it in paid services without releasing your full source code
+
+Removing license terms or attribution
+
+🇰🇪 Kenyan Context
+This license:
+
+Aligns with Article 11 of Kenya's Constitution (culture/innovation)
+
+Supports Article 69 (public participation)
+
+Can be enforced in Kenyan courts
+
+💡 Example Allowed Uses
+ generating petitions: as per public AAct civil Rights.
+
+Civil society organizations advocating for change
+
+Students learning civic tech
+
+⚠️ Violations
+
+Commercial users must either:
+
+Open-source their entire solution,
+
+ or
+
+Contact VICtor Mark (Tylique) for a commercial license

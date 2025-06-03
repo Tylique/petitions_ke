@@ -114,14 +114,19 @@ GNU AFFERO © 2025 Victor MArk (Tylique)
 
 🌍 License Terms (Plain English Summary)
 Your Freedom
-✅ Use Freely: Individuals, NGOs, can use this tool at no cost
+✅ Use Freely: Individuals, NGOs, can use this tool at no cost.
+
 ✅ Copy & Share: Distribute original or modified versions to others
+
 ✅ Protect Privacy: No requirement to disclose user data
 
 Your Responsibilities
 📜 Share Changes: If you modify the code, you must publicly share your version
+
 🔍 Disclose Source: Anyone who uses your modified version must get access to the full source code
+
 🚫 No Commercial Use: Companies/SaaS platforms cannot profit from this software without special permission
+
 
 🚫 Prohibited Actions
 

@@ -26,11 +26,9 @@ export class AIRotator {
     ].filter(Boolean);
 
     this.models = [
-      'Add your AI modeld here',
-      'and anotherone there',
-      'you can add as many as you like',
-      'in this format'
-
+      'mistralai/mistral-7b-instruct:free',
+      'meta-llama/llama-3.1-8b-instruct:free',
+      'nousresearch/nous-hermes-2-mixtral-8x7b-dpo:free'
     ];
   }
 

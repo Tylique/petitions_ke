@@ -25,6 +25,8 @@ cd petitions-ke
 npm install
 cp .env.example .env.local
 # Add your OpenRouter API keys
+# Add Github keys, account  and repo ( helps in writing submitted petitions to lib/submisions.json)
+# also give it a read and  write  permission
 npm run dev
 ```
 

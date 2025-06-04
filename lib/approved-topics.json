@@ -5,5 +5,18 @@
     "description": "Hon. Maryanne Kitany's distribution of sugar that failed KEBS safety tests, endangering school children.",
     "recipients": ["odpp@odpp.go.ke", "info@kebs.org", "info@eacc.go.ke"],
     "basePrompt": "Write a formal petition about {TOPIC}:\n- Mention MP Kitany's donation of 400+ bags of sugar to 30 schools in Aldai\n- Refer to KEBS report confirming sugar was unfit for human consumption\n- Cite Article 37 (petition right), Article 46 (consumer protection), and relevant Acts\n- Demand investigation and prosecution of culpable parties\n- Request medical checks for affected children\n\nUser details:\nName: {NAME}\nLocation: {LOCATION}"
-  }
+  },
+  {
+  "id": "Nakuru-expressway-payout",
+  "title": "Sh6.2B Secret Payout to French Consortium",
+  "description": "Illegal compensation paid to French firm after highway deal was re-awarded to Chinese contractor without due process.",
+  "recipients": [
+    "ps@transport.go.ke",
+    "info@treasury.go.ke",
+    "clerk.senate@parliament.go.ke","cna@parliament.go.ke",
+    "ps@roads.go.ke",
+    "info@roads.go.ke"
+  ],
+  "basePrompt": "Create a petition regarding the secret KSh 6.2 billion payout to a French consortium:\n- State that the payout was made without Parliament’s approval\n- Explain how the contract was cancelled and re-awarded to a Chinese firm\n- Highlight the breach of procurement laws and lack of transparency\n- Demand publication of all contracts and penalties involved\n\nUser: {NAME} from {LOCATION}"
+}
 ]

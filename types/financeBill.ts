@@ -21,3 +21,7 @@ export interface FinanceBillData {
 export interface SummaryPoints {
   points: string[];
 }
+interface TaxImpactCardProps {
+  item: FinanceBillItem;
+  darkMode?: boolean;
+}

@@ -6,18 +6,17 @@
 /*https://github.com/Tylique*/
 
 "use client";
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import EmailPreview from '@/components/EmailPreview';
-import topics from '@/lib/approved-topics.json';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
-
-// Import Swiper styles
+import type { PetitionTopic } from '@/lib/types'; 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 export default function Home() {
+  const [topics, setTopics] = useState<PetitionTopic[]>([]);
   const [email, setEmail] = useState('');
   const [selectedTopic, setSelectedTopic] = useState('');
   const [userDetails, setUserDetails] = useState({
@@ -25,7 +24,27 @@ export default function Home() {
     location: ''
   });
   const [isGenerating, setIsGenerating] = useState(false);
+  const [isLoadingTopics, setIsLoadingTopics] = useState(true);
   const swiperRef = useRef<any>(null);
+
+  useEffect(() => {
+    const loadTopics = async () => {
+      try {
+        const response = await fetch('/api/topics');
+        if (!response.ok) throw new Error('Failed to load topics');
+        const data = await response.json();
+        setTopics(data);
+      } catch (error) {
+        console.error('Error loading topics:', error);
+        // Fallback to local topics
+        const localTopics = await import('@/lib/approved-topics.json');
+        setTopics(localTopics.default || localTopics);
+      } finally {
+        setIsLoadingTopics(false);
+      }
+    };
+    loadTopics();
+  }, []);
 
   const generateEmail = async () => {
     if (!selectedTopic) return;
@@ -33,6 +52,8 @@ export default function Home() {
     setIsGenerating(true);
     try {
       const topic = topics.find(t => t.id === selectedTopic);
+      if (!topic) throw new Error('Topic not found');
+
       const res = await fetch('/api/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -51,6 +72,19 @@ export default function Home() {
   };
 
   const currentTopic = topics.find(t => t.id === selectedTopic);
+
+  if (isLoadingTopics) {
+    return (
+      <div className="card border-0 shadow-sm animate-fade-in">
+        <div className="card-body p-4 text-center">
+          <div className="spinner-border text-success" role="status">
+            <span className="visually-hidden">Loading topics...</span>
+          </div>
+          <p className="mt-2">Loading petition topics...</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="card border-0 shadow-sm animate-fade-in">
@@ -94,7 +128,6 @@ export default function Home() {
                     className={`card h-100 cursor-pointer ${selectedTopic === topic.id ? 'border-success' : ''}`}
                     onClick={() => {
                       setSelectedTopic(topic.id);
-                      // Optional: center this slide in view
                       const index = topics.findIndex(t => t.id === topic.id);
                       swiperRef.current?.swiper.slideTo(index);
                     }}

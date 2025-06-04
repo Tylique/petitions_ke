@@ -7,6 +7,7 @@
 
 // lib/github.ts
 import { Octokit } from 'octokit';
+import type { PetitionTopic } from '@/lib/types';
 
 interface SubmissionData {
   title: string;
@@ -23,6 +24,30 @@ interface StoredSubmission {
   contact?: string;
   createdAt: string;
   status: 'pending' | 'approved' | 'rejected';
+}
+
+
+export async function fetchApprovedTopics(): Promise<PetitionTopic[]> {
+  if (!process.env.GITHUB_OWNER || !process.env.GITHUB_REPO) {
+    throw new Error('Missing GitHub configuration');
+  }
+
+  try {
+    const response = await fetch(
+      `https://raw.githubusercontent.com/${process.env.GITHUB_OWNER}/${process.env.GITHUB_REPO}/main/lib/approved-topics.json`
+    );
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch topics: ${response.statusText}`);
+    }
+
+    return await response.json();
+  } catch (error) {
+    console.error('Error fetching topics:', error);
+    // Fallback to local topics if GitHub fails
+    const localTopics = await import('@/lib/approved-topics.json');
+    return localTopics.default || localTopics;
+  }
 }
 
 export async function submitToGitHub(data: SubmissionData): Promise<StoredSubmission> {

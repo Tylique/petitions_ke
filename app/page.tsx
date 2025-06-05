@@ -7,10 +7,11 @@
 
 "use client";
 import { useState, useRef, useEffect } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
 import EmailPreview from '@/components/EmailPreview';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
-import type { PetitionTopic } from '@/lib/types'; 
+import type { PetitionTopic } from '@/lib/types';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -61,16 +62,19 @@ export default function Home() {
       });
 
       if (!res.ok) throw new Error('Failed to generate');
-      const { email } = await res.json();
+      const { email, source } = await res.json();
       setEmail(email);
+
+      if (source === 'template') {
+        toast.success('Your petition was prepared from our template library');
+      }
     } catch (error) {
       console.error('Generation error:', error);
-      alert('Failed to generate email. Please try again.');
+      toast.error('Failed to generate petition. Please try again.');
     } finally {
       setIsGenerating(false);
     }
   };
-
   const currentTopic = topics.find(t => t.id === selectedTopic);
 
   if (isLoadingTopics) {
@@ -88,21 +92,23 @@ export default function Home() {
 
   return (
     <div className="card border-0 shadow-sm animate-fade-in">
+      <Toaster position="top-right" />
       <div className="card-body p-4">
         <header className="text-center mb-4">
           <div className="text-center mt-4 pt-3 ">
             <a href="/bill" className="btn btn-outline-success btn-sm">
               <i className="bi bi-plus-circle me-1"></i>
-              Finance Bill Summary
+              click here for finance Bill analysis
             </a>
           </div>
           <h1 className="h3 text-success mb-2">Kenyan Email Petitions</h1>
           <p className="text-muted">Create effective petitions in minutes</p>
+
         </header>
 
         <div className="row g-3">
           <div className="col-12">
-            <label className="form-label fw-bold mb-3">Swipe to Select Topic*</label>
+            <label className="form-label fw-bold mb-3">Swipe to Select Petition Topic*</label>
 
             {/* Swiper component for topic cards */}
             <Swiper

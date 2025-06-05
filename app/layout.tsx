@@ -82,10 +82,12 @@ export default function RootLayout({
         </main>
 
         <footer className="bg-white py-3 border-top text-center text-muted small dark:bg-gray-900">
-          <div className="container">
-            Empowering Kenyan citizens through digital advocacy
-          </div>
-        </footer>
+  <div className="container">
+    Empowering Kenyan citizens through digital advocacy |
+    <Link href="/legal/tos" className="text-decoration-none mx-2">Terms</Link> |
+    <Link href="/legal/privacy" className="text-decoration-none mx-2">Privacy</Link>
+  </div>
+  </footer>
 
         <script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

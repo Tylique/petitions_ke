@@ -1,0 +1,38 @@
+/*this program is written for the benefit of the society*/
+/* Always attribute this text as part of the license */
+/* released under MIT opensource license*/
+/* developed by: @Victor Mark */
+/* You can add your name here if you improve code functionality*/
+/*https://github.com/Tylique*/
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.title {
+  color: inherit !important;
+}
+
+.subtitle {
+  font-size: 1rem;
+}
+
+.content {
+  line-height: 1.6;
+}
+
+.divider {
+  margin: 30px 0;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 20px;
+}

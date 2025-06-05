@@ -1,0 +1,74 @@
+{
+  "tos": {
+    "title": "Terms of Service",
+    "lastUpdated": "2025-05-06",
+    "sections": [
+      {
+              "title": "Your Constitutional Rights",
+              "content": "This platform is built upon and respects the Constitution of Kenya (2010). Specifically:\n\n- Article 33: Every person has the right to freedom of expression.\n- Article 35: Every citizen has the right of access to information held by the State.\n- Article 37: Every person has the right, peaceably and unarmed, to assemble, to demonstrate, to picket, and to present petitions to public authorities.\n\nUsing this app to petition government institutions is a protected civic action under these articles."
+            },
+            {
+              "title": "Acceptance of Terms",
+              "content": "By using Kenyan Email Petitions, you agree to these Terms of Service."
+            },
+            {
+              "title": "Service Description",
+              "content": "This platform assists Kenyan citizens in exercising their constitutional right to petition by helping draft email messages directed at relevant public offices. The app does not send emails automatically. All messages are sent manually by users through their own email clients."
+            },
+            {
+              "title": "Lawful Use",
+              "content": "You agree to use this service only in a lawful manner and in line with the Constitution of Kenya."
+            },
+            {
+              "title": "Disclaimer of Liability",
+              "content": "Kenyan Email Petitions does not guarantee any outcome from the use of this service. The platform is not affiliated with any government body. It only provides tools to assist in the petition process and is not responsible for how messages are used or interpreted."
+            },
+            {
+              "title": "Prohibited Use",
+              "content": "This service must not be used to send threats, hate speech, incitement to violence, or fraudulent content. Users are solely responsible for the content they send."
+            },
+            {
+              "title": "Changes to Terms",
+              "content": "We may update these Terms of Service at any time. Continued use of the service after changes implies your acceptance of the revised terms."
+            }
+    ],
+    "contact": {
+      "text": "For questions about these Terms",
+      "email": "c.petitions-ke@tuta.io"
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "2025-05-06",
+    "sections": [
+      {
+              "title": "Your Constitutional Rights",
+              "content": "This platform is built upon and respects the Constitution of Kenya (2010). Specifically:\n\n- Article 33: Freedom of expression ensures your right to communicate your views.\n- Article 35: Access to information ensures your right to know what government bodies are doing.\n- Article 37: The right to petition protects your ability to raise concerns or proposals to public institutions.\n\nWe do not violate or circumvent these rights. Instead, we help facilitate them responsibly."
+            },
+            {
+              "title": "Information We Collect",
+              "content": "We only collect petition submissions made through the platform. Users may optionally include their email address or contact details for follow-up or verification purposes. This is entirely voluntary."
+            },
+            {
+              "title": "How We Use Information",
+              "content": "Submitted petitions are only used for civic engagement purposes. Contact details, if provided, may be used to reach out for clarification or updates related to your petition. We do not sell or share your information with third parties."
+            },
+            {
+              "title": "Data Security",
+              "content": "Petition data is securely stored and only accessed by authorized administrators for public accountability or user support. We do not use third-party analytics or background trackers."
+            },
+            {
+              "title": "User Control",
+              "content": "You may choose not to include any personal details. You may also request deletion of your petition submission and related data at any time by emailing us."
+            },
+            {
+              "title": "Legal Compliance",
+              "content": "This platform operates within the bounds of the Constitution of Kenya and does not perform any unauthorized access, mass mailing, or spam. It facilitates lawful civic participation."
+            }
+    ],
+    "contact": {
+      "text": "You may request deletion of your data or raise privacy concerns by contacting us at",
+      "email": "p.petitions-ke@tuta.io"
+    }
+  }
+}

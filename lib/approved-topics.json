@@ -2,9 +2,9 @@
   {
     "id": "contaminated-sugar",
     "title": "Contaminated Sugar Donation to Schools",
-    "description": "Hon. Maryanne Kitany's distribution of sugar that failed KEBS safety tests, endangering school children.",
+    "description": "Hon. Maryanne Kaitany's distribution of sugar that failed KEBS safety tests, endangering school children.",
     "recipients": ["odpp@odpp.go.ke", "info@kebs.org", "info@eacc.go.ke"],
-    "basePrompt": "Write a formal petition about {TOPIC}:\n- Mention MP Kitany's donation of 400+ bags of sugar to 30 schools in Aldai\n- Refer to KEBS report confirming sugar was unfit for human consumption\n- Cite Article 37 (petition right), Article 46 (consumer protection), and relevant Acts\n- Demand investigation and prosecution of culpable parties\n- Request medical checks for affected children\n\nUser details:\nName: {NAME}\nLocation: {LOCATION}"
+    "basePrompt": "Write a formal petition about {TOPIC}:\n- Mention MP Kaitany's donation of 400+ bags of sugar to 30 schools in Aldai\n- Refer to KEBS report confirming sugar was unfit for human consumption\n- Cite Article 37 (petition right), Article 46 (consumer protection), and relevant Acts\n- Demand investigation and prosecution of culpable parties\n- Request medical checks for affected children\n\nUser details:\nName: {NAME}\nLocation: {LOCATION}"
   },
   {
   "id": "Nakuru-expressway-payout",

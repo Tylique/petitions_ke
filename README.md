@@ -101,7 +101,7 @@ Location: {LOCATION}
 ## **Why This Project?**
 - 🚀 **Efficiency**: Generate petitions in 1 minute vs manual drafting
 - 📊 **Impact**: Over 2500 petitions generated to date.
-- 🔒 **Privacy**: No user data stored
+- 🔒 **Privacy**: No user data stored, no fingerprinting
 - 🌱 **Scalable**: JSON → SQLite migration path ready
 
 ## **Contributing**

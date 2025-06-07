@@ -30,7 +30,7 @@ export async function POST(req: Request) {
     // 1. Get AI provider
     const { key, model, markFailure } = AIRotator.getInstance().getNextProvider();
 
-    // 2. Build minimal, focused prompt (removed any AI disclosure hints)
+    // 2. Built a minimal, focused prompt (removed any AI disclosure hints)
     const prompt = `
       Write as if you are the petitioner directly:
       - Use KENYAN ENGLISH

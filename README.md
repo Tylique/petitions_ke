@@ -114,8 +114,10 @@ GNU AFFERO © 2025 Eng. Mark (Tylique)
 
 ---
 
-🌍 License Terms (Plain English Summary)
-Your Freedom
+## **🌍 License Terms (Plain English Summary)**
+
+## **Your Freedom:**
+
 ✅ Use Freely: Individuals, NGOs, can use this tool at no cost.
 
 ✅ Copy & Share: Distribute original or modified versions to others
@@ -148,7 +150,7 @@ Supports Article 69 (public participation)
 Can be enforced in Kenyan courts
 
 💡 Example Allowed Uses
- generating petitions: as per public AAct civil Rights.
+ generating petitions: as per public Act civil Rights.
 
 Civil society organizations advocating for change
 

@@ -100,7 +100,7 @@ Location: {LOCATION}
 
 ## **Why This Project?**
 - 🚀 **Efficiency**: Generate petitions in 1 minute vs manual drafting
-- 📊 **Impact**: Over 500 petitions generated to date
+- 📊 **Impact**: Over 2500 petitions generated to date.
 - 🔒 **Privacy**: No user data stored
 - 🌱 **Scalable**: JSON → SQLite migration path ready
 
@@ -110,7 +110,7 @@ Location: {LOCATION}
 3. Submit PR with test evidence
 
 ## **License**
-GNU AFFERO © 2025 Victor MArk (Tylique)
+GNU AFFERO © 2025 Eng. Mark (Tylique)
 
 ---
 
@@ -162,4 +162,4 @@ Open-source their entire solution,
 
  or
 
-Contact VICtor Mark (Tylique) for a commercial license
+Contact Eng. Mark (Tylique) for a commercial license

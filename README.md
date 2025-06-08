@@ -124,7 +124,8 @@ GNU AFFERO © 2025 Eng. Mark (Tylique)
 
 ✅ Protect Privacy: No requirement to disclose user data
 
-Your Responsibilities
+Your Responsibilities:
+
 📜 Share Changes: If you modify the code, you must publicly share your version
 
 🔍 Disclose Source: Anyone who uses your modified version must get access to the full source code

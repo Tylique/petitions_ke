@@ -20,8 +20,8 @@ A platform for generating formal petition emails to Kenyan government offices an
 
 ## **Setup**
 ```bash
-git clone https://github.com/your-repo/petitions-ke.git
-cd petitions-ke
+git https://github.com/Tylique/petitions_ke.git
+cd petitions_ke
 npm install
 cp .env.example .env.local
 # Add your OpenRouter API keys
@@ -35,7 +35,7 @@ npm run dev
 ```ini
 OPENROUTER_KEY1=your_key_1
 OPENROUTER_KEY2=your_key_2
-# ... up to KEY6
+# ... up to KEYS you support
 ```
 
 ## **Project Structure**
@@ -94,7 +94,7 @@ Location: {LOCATION}
 - Vercel (recommended)
 - Node.js 20+ required
 - Environment variables:
-  - `OPENROUTER_KEY1` to `OPENROUTER_KEY6`
+  - `OPENROUTER_KEY1` to `OPENROUTER_KEY n+1`
 
 ---
 
